@@ -1,0 +1,26 @@
+Register 
+
+1. Submit Donation
+• Name, Phone, Location, Product
+
+
+2. Pickup Listings Page
+• Show available pickups (store name, # of bags, time window).
+• Volunteers click “I’ll pick it up”
+• This can be a simple list view sorted by distance (no map required yet).
+
+3. Store Sign Up / Intake Form
+• Create an account (or Login)
+• List store info & pickup location
+• Agree to terms (liability, donation, etc.)
+• Post their first available pickup
+
+4. Admin Dashboard
+• View all Volunteers, Stores, Pickups
+• Eventually have other stats here
+
+5. Notifications
+• Volunteers get notified when a pickup is posted near them.
+• Stores get notifications when a volunteer will pickup
+• Start with email or text
+
