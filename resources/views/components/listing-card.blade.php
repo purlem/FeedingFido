@@ -76,7 +76,7 @@
                 @endif
             @else
                 <div class="mt-3">
-                    <a href="{{ route('register') }}" class="inline-block text-sm text-indigo-600 hover:underline">
+                    <a href="{{ route('register') }}?role=recipient" class="inline-block text-sm text-indigo-600 hover:underline">
                         Register to accept this listing
                     </a>
                 </div>

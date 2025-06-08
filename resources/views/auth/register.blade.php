@@ -1,6 +1,6 @@
 <x-auth>
     @php
-        $role = $role ?? request('role', 'recipient');
+        $role = in_array(request('role'), ['donor', 'recipient']) ? request('role') : null;
     @endphp
 
     <form method="POST" action="{{ route('register') }}">
@@ -10,8 +10,10 @@
         @props(['role'])
 
         @php
-            $initialRole = old('role', $role ?? 'recipient');
-            $lockedRole = request()->has('role');
+            $urlRole = request('role');
+            $role = in_array($urlRole, ['donor', 'recipient']) ? $urlRole : null;
+            $initialRole = old('role', $role); // do not default to 'recipient' here
+            $lockedRole = in_array($role, ['donor', 'recipient']);
         @endphp
 
         <div x-data="{ role: '{{ $initialRole }}' }" class="mt-4">
